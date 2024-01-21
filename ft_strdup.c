@@ -16,16 +16,14 @@ char	*ft_strdup(char *s)
 {
 	int		i;
 	char	*fin;
-	char	*s1;
 
 	i = 0;
-	s1 = (char *)s;
 	fin = (char *)malloc(ft_strlen(s) + 1);
 	if (!fin)
 		return (NULL);
-	while (s1[i])
+	while (s[i])
 	{
-		fin[i] = s1[i];
+		fin[i] = s[i];
 		i++;
 	}
 	fin[i] = '\0';
